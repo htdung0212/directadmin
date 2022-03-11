@@ -432,7 +432,7 @@ doSetHostname() {
 	${DA_SCRIPTS}/hostname.sh "${HN}"
 }
 
-${DA_SCRIPTS}/doChecks.sh || exit 1
+${DA_SCRIPTS}/doChecks.sh || exit 0
 
 doSetHostname
 createDAbase
